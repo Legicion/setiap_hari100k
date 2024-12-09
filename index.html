@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabungan Harian</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tabungan Harian</h1>
 
+        <!-- Pilihan Tema -->
+        <button id="toggleTheme">Ubah Tema</button>
+
+        <!-- Tanggal Awal -->
+        <div class="input-group">
+            <label for="startDateInput">Pilih Tanggal Mulai:</label>
+            <input type="date" id="startDateInput" />
+        </div>
+
+        <div class="output">
+            <p>Tanggal Awal: <span id="startDate">Belum Dipilih</span></p>
+            <p>Saldo Saat Ini: <span id="currentBalance">Rp0</span></p>
+            <p>Total yang Diambil: <span id="totalDeducted">Rp0</span></p>
+        </div>
+
+        <!-- Pengurangan -->
+        <div class="input-group">
+            <label for="deductAmount">Jumlah Uang yang Diambil:</label>
+            <input type="text" id="deductAmount" placeholder="Masukkan jumlah" />
+            <button id="deductButton">Ambil Uang</button>
+        </div>
+
+        <!-- Riwayat -->
+        <div class="history">
+            <h2>Riwayat Pengambilan</h2>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
